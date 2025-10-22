@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baseball IQ Trivia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1>Baseball IQ Trivia</h1>
+      <p class="app__tagline">Test your baseball instincts with a balanced mix of questions.</p>
+    </header>
+
+    <section id="intro" class="card">
+      <h2>How it works</h2>
+      <ul>
+        <li>Each game serves up ten questions drawn from the Baseball IQ Coach&rsquo;s deck.</li>
+        <li>Every round includes a balanced mix of easy, medium, and hard questions.</li>
+        <li>Answer each question in order &mdash; you&rsquo;ll see how you did right away.</li>
+      </ul>
+      <button id="start-btn" class="btn primary">Start a Quiz</button>
+    </section>
+
+    <section id="quiz" class="card hidden" aria-live="polite">
+      <div class="quiz__status">
+        <span id="question-counter">Question 1 of 10</span>
+        <span id="score-counter">Score: 0</span>
+      </div>
+      <div id="question-card" class="question">
+        <h2 id="question-text"></h2>
+        <div id="answer-options" class="options"></div>
+      </div>
+      <div class="quiz__controls">
+        <button id="submit-btn" class="btn primary" disabled>Submit Answer</button>
+        <button id="next-btn" class="btn secondary hidden">Next Question</button>
+      </div>
+      <div id="feedback" class="feedback" role="status"></div>
+    </section>
+
+    <section id="results" class="card hidden">
+      <h2>Nice work!</h2>
+      <p id="final-score"></p>
+      <div id="breakdown"></div>
+      <button id="restart-btn" class="btn primary">Play Again</button>
+    </section>
+
+    <footer class="app__footer">
+      <p>Coming soon: compete with friends on a shared leaderboard.</p>
+    </footer>
+  </main>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
