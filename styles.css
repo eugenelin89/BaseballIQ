@@ -214,4 +214,8 @@ body {
   .option {
     padding: 12px 12px;
   }
+
+  .app__footer-logo {
+    height: 16px;
+  }
 }
