@@ -182,6 +182,24 @@ body {
   margin-top: auto;
 }
 
+.app__footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.app__footer-link:hover,
+.app__footer-link:focus {
+  text-decoration: underline;
+}
+
+.app__footer-logo {
+  height: 20px;
+  width: auto;
+}
+
 @media (max-width: 520px) {
   .card {
     gap: 12px;
