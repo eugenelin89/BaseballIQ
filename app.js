@@ -1063,9 +1063,9 @@ const QUESTION_BANK = [
 
 const QUESTIONS_PER_ROUND = 10;
 const DIFFICULTY_MIX = {
-  easy: 4,
-  medium: 4,
-  hard: 2,
+  easy: 2,
+  medium: 5,
+  hard: 3,
 };
 
 const introSection = document.getElementById("intro");
